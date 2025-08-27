@@ -177,9 +177,6 @@ export async function streamCompletion(
         buffer += content;
         callback?.(content);
         console.log(buffer);
-        console.log('conversationID:', submitMessages[0]);
-        const conversationId = getConversationId(messageId);
-        console.log(conversationId);
       }
     });
 
